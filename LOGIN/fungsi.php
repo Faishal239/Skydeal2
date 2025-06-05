@@ -2,16 +2,15 @@
 include 'koneksi.php';
 
 function tambah_data($data, $files){
-    // Ambil data dari form
     $username = $data['Username'];
     $password = $data['password'];
     $jenis_kelamin = $data['jenis_kelamin'];
+    $role = 'user'; 
 
-    // Query insert
-    $query = "INSERT INTO tabel_usr VALUES (null, '$username', '$password', '$jenis_kelamin')";
+    $query = "INSERT INTO tabel_usr (Username, Password, Jenis_Kelamin, role) 
+              VALUES ('$username', '$password', '$jenis_kelamin', '$role')";
     $sql = mysqli_query($GLOBALS['conn'], $query);
 
-    // Cek apakah query berhasil
     if (!$sql) {
         die("Query tambah_data gagal: " . mysqli_error($GLOBALS['conn']));
     }
@@ -24,9 +23,11 @@ function ubah_data($data, $files){
     $username = $data['Username'];
     $password = $data['password'];
     $jenis_kelamin = $data['jenis_kelamin'];
+    $role = isset($data['role']) ? $data['role'] : 'user';
 
-    // Query update
-    $query = "UPDATE tabel_usr SET Username='$username', Password='$password', Jenis_Kelamin='$jenis_kelamin' WHERE id='$id'";
+    $query = "UPDATE tabel_usr 
+              SET Username='$username', Password='$password', Jenis_Kelamin='$jenis_kelamin', role='$role' 
+              WHERE id_user='$id'";
     $sql = mysqli_query($GLOBALS['conn'], $query);
 
     if (!$sql) {
@@ -39,14 +40,6 @@ function ubah_data($data, $files){
 function hapus_data($data){
     $id = $data['hapus'];
 
-    // Query delete
-    $query = "DELETE FROM tabel_usr WHERE id = '$id'";
+    $query = "DELETE FROM tabel_usr WHERE id_user = '$id'";
     $sql = mysqli_query($GLOBALS['conn'], $query);
-
-    if (!$sql) {
-        die("Query hapus_data gagal: " . mysqli_error($GLOBALS['conn']));
-    }
-
-    return true;
 }
-?>

@@ -1,0 +1,226 @@
+<?php
+session_start();
+if (!isset($_SESSION['role']) || strtolower($_SESSION['role']) !== 'admin') {
+    header("Location: ../index.html");
+    exit();
+}
+
+include "../LOGIN/koneksi.php";
+$id = $_SESSION['id'];
+$query = mysqli_query($conn, "SELECT role FROM tabel_usr WHERE id_user = '$id'");
+$data = mysqli_fetch_assoc($query);
+
+if ($data['role'] !== 'admin') {
+    header("Location: ../Informasi/Informasi2.html");
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Skydeal</title>
+    <link rel="stylesheet" href="Admin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="Dropdown.js" defer></script>
+
+</head>
+<body>
+      <div class="konten">
+
+      <div class="BG">
+      <div class="navbar">
+        <div class="icon">
+            <a href="Informasi2.html">
+            <p class="hello">
+            <span class="sky">SKY</span><span class="deal">DEAL</span>
+            </p>
+            </a>
+
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="../Destinasi/Destinasi.html">Destinasi</a></li>
+                    <li><a href="../CABIN/Cabin.html">Pusat Informasi</a></li>
+                    <li><a href="../RIWAYAT/Riwayat.php">Riwayat Pemesanan</a></li>
+                    <li><a href="#">Tentang Kami</a></li>    
+                    
+                    <li class="dropdown">
+                    <a href="#">Admin</a>
+                    <div class="dropdown-content">
+                    <a href="../ADMIN/ADMIN/Index.php">Data Admin</a>
+                    <a href="../ADMIN/PEMESANAN/Index.php">Pemesanan</a>
+                    <a href="../ADMIN/PRODUK/Index.php">Produk</a>
+                  </div>
+                  </li>
+
+                    <li class="dropdown">
+                    <a href="#">User</a>
+                    <div class="dropdown-content">
+                    <a href="../USER/USER/Index.php">Data User</a>
+                    <a href="#">Pesanan Saya</a>
+                    <a href="#">Logout</a>
+                  </div>
+                  </li>
+                </ul>
+
+            </div>
+            </div>
+            
+            <!-- BAWAH KODE KOLOM PEMESANAN -->
+            <div class="booking-form">
+                <div class="form-group">
+                  <label for="from">From</label>
+                  <select id="from" required>
+                    <option value="" disabled selected hidden> Departure</option>
+                    <option value="AHB">Abha, Saudi Arabia (AHB)</option>
+                    <option value="HBE">Alexandria,  Egypt (HBE)</option>
+                    <option value="AMM">Amman, Yordania (AMM)</option>
+                    <option value="DXB">Dubai, United Arab Emirates (DXB)</option>
+                    <option value="IST">Istanbul, Turkey (IST)</option>
+                    <option value="SAW">Istanbul Sabiha, Turkey (SAW)</option>
+                    <option value="JED">Jeddah, Saudi Arabia (JED)</option>
+                    <option value="KHI">Karachi, Pakistan (KHI)</option>
+                    <option value="MED">Madinah, Saudi Arabia (MED)</option>
+                    <option value="RUH">Riyadh, Saudi Arabia (RUH)</option>
+                    <option value="SLL">Salalah Airport, Oman (SLL)</option>
+                    <option value="SJJ">Sarajevo, Bosnia And Herzegovina (SJJ)</option>
+                    <option value="HMB">Sohag, Egypt (HMB)</option>
+                    <option value="TUU">Tabuk, Saudi Arabia (TUU)</option>
+                    <option value="TIF">Taif, Saudi Arabia (TIF)</option>
+                    <option value="GYD">Baku, Azerbaijan (GYD)</option>
+                    <option value="FR">Paris, Prancis (FR)</option>
+                    <option value="US">New York, Amerika Serikat (US)</option>
+                    <option value="LHR">London, Inggris (LHR)</option>
+                  </select>
+                </div>
+                
+                <div class="form-group" >
+                  <label for="to">To</label>
+                  <select id="to" required>
+                    <option value="" disabled selected hidden > Select Destination</option>
+                  </select>
+                </div>
+              
+                <div class="form-group">
+                  <label for="date">Date</label>
+                  <input type="text" id="date" placeholder="Select date" readonly>
+                </div>
+              
+                <div class="form-group">
+                  <label for="passengers">Passengers</label>
+                  <select id="passengers">
+                    <option>1 Adult</option>
+                    <option>2 Adults</option>
+                    <option>3 Adults</option>
+
+                    <option>1 Adult, 1 Child</option>
+                    <option>2 Adults, 1 Child</option>
+                    <option>2 Adults, 2 Child</option>
+                    <option>3 Adults, 2 Child</option>
+
+                  </select>
+                </div>
+              
+                <div class="form-group">
+                  <label for="">Seat Class</label>
+                  <select id="class">
+                    <option>Economy Class</option>
+                    <option>Premium Economy</option>
+                    <option>Business Class</option>
+                    <option>First Class</option>
+
+                  </select>
+                </div>
+              
+                <div class="full-width">
+                  <button class="btn">LET'S FLY!</button>
+                </div>
+              </div>
+              
+              <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+              <script>
+                flatpickr("#date", {
+                  mode: "range",
+                  dateFormat: "d M D",
+                });
+              </script>
+            <!-- SELESAI -->
+              </div>
+
+              <h2 class="PROMO">Promo Spesial untuk Kamu</h2>
+              <br>
+              <img src="../Informasi/PROMO/image1.png" class="img1">
+              <img src="../Informasi/PROMO/image3.png" class="img2">
+              <img src="../Informasi/PROMO/image2.png" class="img3">
+
+              <h2 class="Populer">Destinasi populer</h2>
+              <br>
+              <a target="_blank" href="../Negara/PARIS/Paris.html">
+              <img src="../Negara/PARIS/Paris.png" class="RYD">
+              </a>
+              <button class="RTOMBOL">PARIS</button>
+
+              <a target="_blank" href="../Negara/MADINAH/Madinah.html">
+              <img src="../Informasi/PROMO/MADINAHP.png" class="MDH">
+              </a>
+              <button class="MTOMBOL">MADINAH</button>
+
+              <a target="_blank" href="../Negara/DUBAI/Dubai.html">
+              <img src="../Informasi/PROMO/DUBAIP.png" class="DBI">
+              <button class="DTOMBOL">DUBAI</button>
+              </a>
+
+              <div class="persegi-panjang">
+              <h1 class="tips">Persiapan Sebelum Penerbangan</h1>
+              <div class="pas">
+              <img src="../Informasi/PROMO/Paspor.png" class="paspor">
+              <img src="../Informasi/PROMO/jam.png" class="jam">
+              <img src="../Informasi/PROMO/koper.png" class="koper">
+              </div>
+
+              <h2 class="HP">1. Persiapkan <br> Dokumen Perjalanan</h2>
+              <p class="PP"> Pastikan paspor, visa, dan <br> tiket kamu sudah siap <br> dan valid sebelum 
+              <br>keberangkatan.</p>
+
+              <h2 class="HJ">2. Datang Lebih<br>Awal ke Bandara</h2>
+              <p class="PJ">Disarankan datang 2-3 jam<br> sebelum penerbangan<br>untuk menghindari antrean  
+              <br>dan memastikan check-in <br> berjalan lancar.</p>
+
+              <h2 class="HK">3. Periksa<br>Aturan Bagasi</h2>
+              <p class="PK">Cek batas berat dan ukuran<br>bagasi kabin maupun<br>bagasi terdaftar untuk  
+              <br>menghindari biaya tambahan.</p>
+              </div>
+
+              <footer>
+              <p class="LF">
+              <span class="sky1">SKY</span><span class="deal1">DEAL</span>
+              </p>
+              <p class="H2F">Follow us on social media</p>
+
+              <p class="H22">Bantuan</p>
+              <p class="B1">Contact us</p>
+              <p class="B2">Bantuan & FAQ</p>
+              <p class="B3">Syarat & Ketentuan</p>
+
+              <p class="H23">Tentang Skydeal</p>
+          
+              <div class="icons">
+                <a href="https://www.facebook.com/facebook" target="_blank" ><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.instagram.com/instagram?igsh=MWgxYnJlamJ2d3A1Zw==" target="_blank" ><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://x.com/elonmusk" target="_blank" ><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="http://youtube.com/user/youtube?sub_confirmation=1" target="_blank" ><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="https://www.tiktok.com/@tiktok?is_from_webapp=1&sender_device=pc" target="_blank" ><ion-icon name="logo-tiktok"></ion-icon></a>
+              </div>
+
+              <div class="footer-bottom">
+    
+              <p>© 2025 Skydeal. All rights reserved.</p>
+              </div>
+              </footer>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

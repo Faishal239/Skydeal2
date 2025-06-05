@@ -3,13 +3,13 @@
 <head>
     <title>Skydeal</title>
     <link rel="stylesheet" href="Informasi2.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"><!--KALENDER-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!--PROFILE-->
     <script src="Dropdown.js" defer></script>
 
 </head>
 <body>
-      <div class="konten">
 
       <div class="BG">
       <div class="navbar">
@@ -24,15 +24,27 @@
 
             <div class="menu">
                 <ul>
-                    <li><a href="../Destinasi/Destinasi.html">DESTINASI</a></li>
-                    <li><a href="../CABIN/Cabin.html">PUSAT INFO</a></li>
-                    <li><a href="#">DESIGN</a></li>
-                    <li><a href="#">PROFILE</a></li>
-
-                    <form action="../Informasi/Search.php">
-                    <input type="text" class="Search" placeholder="Masukan Nama Kota" name="Search">
-                    <button type="submit" class="SRC"><i class="fa fa-search"></i></button>
+                    <li><a href="../Destinasi/Destinasi.html">Destinasi</a></li>
+                    <li><a href="../CABIN/Cabin.html">Pusat Informasi</a></li>
+                    <li><a href="../RIWAYAT/Riwayat.php">Riwayat Pemesanan</a></li>
+                    <li><a href="../ABOUT/About.html">Tentang Kami</a></li>  
                     
+                    <li class="dropdown">
+                    <div class="profile-icon">
+                    <i class="fas fa-user"></i> 
+                    </div>
+                    <div class="dropdown-content">
+                    <a href="profil.php">Profil</a>
+                    
+                    <form action="Deleteuser.php" method="POST" onsubmit="return confirm('Yakin ingin menghapus akun secara permanen?');" style="margin: 0; padding: 0;">
+                    <button type="submit" name="hapus_akun" class="delete-btn" >
+                    Delete Account
+                    </button>
+                    </form>
+     
+                    <a href="../LOGIN/index.html">Logout</a>
+                    </div>
+                  </li>
                 </ul>
 
             </div>
@@ -94,7 +106,7 @@
                 </div>
               
                 <div class="form-group">
-                  <label for="">Class</label>
+                  <label for="">Seat Class</label>
                   <select id="class">
                     <option>Economy Class</option>
                     <option>Premium Economy</option>
@@ -143,7 +155,7 @@
               </a>
 
               <div class="persegi-panjang">
-              <h1 class="tips">Tips & Info Penerbangan</h1>
+              <h1 class="tips">Persiapan Sebelum Penerbangan</h1>
               <div class="pas">
               <img src="../Informasi/PROMO/Paspor.png" class="paspor">
               <img src="../Informasi/PROMO/jam.png" class="jam">
@@ -188,7 +200,6 @@
     
               <p>© 2025 Skydeal. All rights reserved.</p>
               </div>
-              </footer>
               </footer>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

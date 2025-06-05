@@ -3,11 +3,14 @@
     padding: 0;
 }
 
+body {
+    background-color: #e6f0fa;
+}
 .navbar{
-    width: 1280px;
+    width: 1264px;
     height: 75px;
     margin-bottom: 10px;
-    background-color: #F6F0F0;
+    background-color: #0b3d91;
 }
 
 .hello{
@@ -30,7 +33,7 @@
 }
 
 .deal {
-  color: #87CEEB;
+  color: #fff;
 }
 
 .TRK {
@@ -44,7 +47,7 @@
 
 .IMK {
     width: 50%;
-    height: 280px;
+    height: 250px;
     text-align: center;
     margin-left: 25%;
     margin-top: 5%;
@@ -55,7 +58,7 @@
     position: absolute;
     top: 75.5%;
     left: 2%;
-    color: rgb(74, 0, 74);
+    color: #0B3D91;
      font-family: arial;
 }
 
@@ -69,10 +72,10 @@
 
 .PRICE {
     position: absolute;
-    left: 66%;
+    left: 65%;
     top: 84%;
-    font-size: 32px;
-    color: rgb(74, 0, 74);
+    font-size: 30px;
+    color: #0B3D91;
 }
 
 .TBL {
@@ -86,4 +89,71 @@
     border-radius: 5px;          
     display: flex;                        
     cursor: pointer;     
+}
+
+/*JADWAL*/
+.container {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;     
+  margin-top: -10px;
+  height: 100vh; 
+  gap: 25px;     
+}
+
+.persegi-panjang {
+  top: 25px;
+  width: 280px;
+  height: 230px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.JADWAL {
+    margin-left: 2%;
+    margin-top: 225px;
+    font-family: arial;
+    color: #0B3D91;
+}
+
+.FRM {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: arial;
+}
+
+.persegi-panjang p {
+    margin-left: 10px;
+}
+
+.From1 {
+    margin-right: 10px;
+    text-align: right;
+}
+
+.PR {
+    margin-right: 5px;
+    font-family: arial;
+    color: #0B3D91;
+    text-align: right;
+}
+
+.BOOK {    
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    padding: 13px 102.5px;          
+    background-color: #007BFF;   
+    color: white;                
+    border: none;                
+    border-radius: 5px;          
+    display: flex;                        
+    cursor: pointer;     
+}
+
+.IF {
+    margin-right: 5px;
+    color: #727070;
+    text-align: right;
 }

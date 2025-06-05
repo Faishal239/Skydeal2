@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pemesanan Tiket Pesawat</title>
+
+  <link rel="stylesheet" href="Form.css">
+</head>
+
+<body>
+
+  <div class="persegi-panjang">
+    <h2 class="HAF">Pemesanan Tiket Pesawat</h2>
+    <form action="Proses_Form.php" method="post" autocomplete="off">
+
+      <label for="nama_lengkap">Nama Lengkap:</label>
+      <input type="text" name="nama_lengkap" placeholder="Nama Lengkap" required autocomplete="off" />
+
+      <label for="tanggal_lahir">Tanggal Lahir:</label>
+      <input type="date" id="tanggal_lahir" name="tanggal_lahir" required autocomplete="off" max="2009-12-31" />
+
+      <label for="nik">Nomor Induk Kependudukan (NIK):</label>
+      <input type="text" id="nik" name="nik" placeholder="NIK (16 digit)" minlength="16" maxlength="16" pattern="\d{16}"
+        required autocomplete="off" />
+
+      <label for="departure">Departure:</label>
+      <select name="departure" required>
+        <option value="" disabled selected>Departure</option>
+        <option value="Abha (AHB)">Abha, Saudi Arabia (AHB)</option>
+        <option value="Alexandria (HBE)">Alexandria, Egypt (HBE)</option>
+        <option value="Amman (AMM)">Amman, Yordania (AMM)</option>
+        <option value="Dubai (DXB)">Dubai, United Arab Emirates (DXB)</option>
+        <option value="Istanbul (IST)">Istanbul, Turkey (IST)</option>
+        <option value="Istanbul Sabiha (SAW)">Istanbul Sabiha, Turkey (SAW)</option>
+        <option value="Jeddah (JED)">Jeddah, Saudi Arabia (JED)</option>
+        <option value="Karachi (KHI)">Karachi, Pakistan (KHI)</option>
+        <option value="Madinah (MED)">Madinah, Saudi Arabia (MED)</option>
+        <option value="Riyadh (RUH)">Riyadh, Saudi Arabia (RUH)</option>
+        <option value="Salalah Airport (SLL)">Salalah Airport, Oman (SLL)</option>
+        <option value="Sarajevo (SJJ)">Sarajevo, Bosnia And Herzegovina (SJJ)</option>
+        <option value="Sohag (HMB)">Sohag, Egypt (HMB)</option>
+        <option value="Tabuk (TUU)">Tabuk, Saudi Arabia (TUU)</option>
+        <option value="Taif (TIF)">Taif, Saudi Arabia (TIF)</option>
+        <option value="Baku (GYD)">Baku, Azerbaijan (GYD)</option>
+        <option value="Paris (FR)">Paris, Prancis (FR)</option>
+        <option value="New York (US)">New York, Amerika Serikat (US)</option>
+        <option value="London (LHR)">London, Inggris (LHR)</option>
+      </select>
+
+      <label for="destinasi">Destinasi:</label>
+      <select name="destinasi" required>
+        <option value="" disabled selected>Destinasi</option>
+        <option value="Abha (AHB)">Abha, Saudi Arabia (AHB)</option>
+        <option value="Alexandria (HBE)">Alexandria, Egypt (HBE)</option>
+        <option value="Amman (AMM)">Amman, Yordania (AMM)</option>
+        <option value="Dubai (DXB)">Dubai, United Arab Emirates (DXB)</option>
+        <option value="Istanbul (IST)">Istanbul, Turkey (IST)</option>
+        <option value="Istanbul Sabiha (SAW)">Istanbul Sabiha, Turkey (SAW)</option>
+        <option value="Jeddah (JED)">Jeddah, Saudi Arabia (JED)</option>
+        <option value="Karachi (KHI)">Karachi, Pakistan (KHI)</option>
+        <option value="Madinah (MED)">Madinah, Saudi Arabia (MED)</option>
+        <option value="Riyadh (RUH)">Riyadh, Saudi Arabia (RUH)</option>
+        <option value="Salalah Airport (SLL)">Salalah Airport, Oman (SLL)</option>
+        <option value="Sarajevo (SJJ)">Sarajevo, Bosnia And Herzegovina (SJJ)</option>
+        <option value="Sohag (HMB)">Sohag, Egypt (HMB)</option>
+        <option value="Tabuk (TUU)">Tabuk, Saudi Arabia (TUU)</option>
+        <option value="Taif (TIF)">Taif, Saudi Arabia (TIF)</option>
+        <option value="Baku (GYD)">Baku, Azerbaijan (GYD)</option>
+        <option value="Paris (FR)">Paris, Prancis (FR)</option>
+        <option value="New York (US)">New York, Amerika Serikat (US)</option>
+        <option value="London (LHR)">London, Inggris (LHR)</option>
+      </select>
+
+      <label for="tanggal">Tanggal Keberangkatan:</label>
+      <input type="date" id="tanggal" name="tanggal" required autocomplete="off" min="2025-06-10" max="2025-12-31" />
+
+      <label for="Departure_Time">Departure Time:</label>
+      <select name="Departure_Time" required>
+        <option value="" disabled selected>Pilih Waktu Keberangkatan</option>
+        <option value="07:00">07:00</option>
+        <option value="08:00">08:00</option>
+        <option value="08:15">08:15</option>
+        <option value="08:30">08:30</option>
+        <option value="09:00">09:00</option>
+        <option value="09:30">09:30</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="12:15">12:15</option>
+        <option value="12:30">12:30</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+        <option value="14:30">14:30</option>
+        <option value="15:00">15:00</option>
+        <option value="15:15">15:15</option>
+        <option value="16:00">16:00</option>
+        <option value="16:30">16:30</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+        <option value="18:15">18:15</option>
+        <option value="19:00">19:00</option>
+        <option value="20:00">20:00</option>
+        <option value="20:30">20:30</option>
+        <option value="21:00">21:00</option>
+        <option value="22:00">22:00</option>
+      </select>
+
+      <label for="jumlah_penumpang">Jumlah Penumpang:</label>
+      <select name="jumlah_penumpang" id="jumlah_penumpang" required>
+        <option value="" disabled selected>Pilih Jumlah Penumpang</option>
+        <option value="1">1 </option>
+        <option value="2">2 </option>
+        <option value="3">3 </option>
+        <option value="4">4 </option>
+        <option value="5">5 </option>
+        <option value="6">6 </option>
+        <option value="7">7 </option>
+        <option value="8">8 </option>
+        <option value="9">9 </option>
+        <option value="10">10 </option>
+      </select>
+
+      <label for="seat_class">Seat Class:</label>
+      <select name="seat_class" required>
+        <option value="" disabled selected>Seat Class</option>
+        <option value="Economy Class">Economy Class</option>
+        <option value="Premium Class">Premium Class</option>
+        <option value="Business Class">Business Class</option>
+        <option value="First Class">First Class</option>
+      </select>
+
+      <label for="flight_code">Kode Penerbangan:</label>
+      <input type="text" id="flight_code" name="flight_code" maxlength="6" placeholder="Contoh: GA1234" required
+        autocomplete="off" />
+
+      <button type="submit">Pesan Tiket</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

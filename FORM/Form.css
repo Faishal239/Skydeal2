@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e6f0fa;
+    height: 1050px;
+}
+
+.persegi-panjang {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;              
+  height:925px;             
+  background-color: #fff;  
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+label {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #000;
+  display: block;
+  text-align: left;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+input, select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+input:focus, select:focus {
+    border-color: #003366; 
+    outline: none;
+}
+button {
+    padding: 0.8rem;
+    background-color: #003366; 
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 80.5%;
+    align-self: center;
+    }
+button:hover {
+    background-color: #00509E; 
+}
+form button {
+  margin-top: 2rem;
+}
+.HAF {
+    font-family: Arial;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #003366;
+    margin-top: 2rem;
+}

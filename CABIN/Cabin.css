@@ -3,23 +3,15 @@
     padding: 0;
 }
 
-.konten {
-      height: 3000px;
-}
-
-.BG {
-background: url(../img/Info.png);
-width: 100%;
-background-position: center;
-background-size: cover;
-height: 100vh;
+body{
+    background-color: #e6f0fa;
 }
 
 .navbar{
     width: 1264px;
     height: 75px;
     margin-bottom: 10px;
-    background-color: #522d6d;
+    background-color: #0B3D91;
 }
 
 .icon{
@@ -81,161 +73,193 @@ ul li a:hover{
     color: #ff7200;
 }
 
-.Istanbul {
-    background: #fff;
-    /*padding: 25px;*/
-    border-radius: 12px;
-    width: 250px;
-    height: 340px;
-    margin-left: 9%;
-    margin-top: 17px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+.persegi-panjang {
+  position: relative;
+  margin: 60px auto; 
+  width: 95%;
+  height: 610px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.IMI {
-    width: 250px;
-    height: 230px;
-    border-radius: 10px;
+.persegi-panjang1 {
+  position: relative;
+  left: 2.5%;
+  top: 25px;
+  width: 46%;
+  height: 560px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
-.ISTH2 {
-    position: absolute;
-    top: 64.5%;
-    left: 10%;
-    font-size: 22px;
-    font-family: arial;
+.No1 {
+  position: absolute;
+  top: 25px;
+  left: 5%;
+  width: 50%; 
+  height: 170px;
+  border-radius: 10px;
 }
-
-.PRICE {
-    position: absolute;
-    top: 70.2%;
-    left: 10%;
-    font-size: 15px;
-    color: #A0A0A0;
-    font-family: arial;
-}
-
-/*JEDDAH*/
-.Jeddah {
-    background: #fff;
-    /*padding: 25px;*/
-    border-radius: 12px;
-    width: 250px;
-    height: 340px;
-    margin-left: 30%;
-    margin-top: -340px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.IMJ {
-    width: 250px;
-    height: 230px;
-    border-radius: 10px;
-}
-
-.JDH2 {
-    position: absolute;
-    top: 64.5%;
-    left: 31%;
-    font-size: 22px;
-    font-family: arial;
-}
-
-.HARGAJ {
-    position: absolute;
-    top: 70.2%;
-    left: 31%;
-    font-family: arial;
-    font-size: 15px;
-    color: #A0A0A0;
-}
-
-/*DUBAI*/
-.Dubai {
-    background: #fff;
-    /*padding: 25px;*/
-    border-radius: 12px;
-    width: 250px;
-    height: 340px;
-    margin-left: 51%;
-    margin-top: -340.5px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.IMD {
-    width: 250px;
-    height: 230px;
-    border-radius: 10px;
-}
-
-.DBH2 {
-    position: absolute;
-    top: 64.5%;
-    left: 52%;
-    font-size: 21px;
-    font-family: arial;
-}
-
-.HARGAD {
-    position: absolute;
-    top: 70.2%;
-    left: 52%;
-    font-size: 15px;
-    color: #A0A0A0;
-    font-family: arial;
-}
-
-/*RIYADH*/
-.Riyadh {
-    background: #fff;
-    /*padding: 25px;*/
-    border-radius: 12px;
-    width: 250px;
-    height: 340px;
-    margin-left: 72%;
-    margin-top: -340.5px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.IMR {
-    width: 250px;
-    height: 230px;
-    border-radius: 10px;
-}
-
-.RYDH2 {
-    position: absolute;
-    top: 64.5%;
-    left: 73%;
-    font-size: 22px;
-    font-family: arial;
-}
-
-.HARGAR {
-    position: absolute;
-    top: 70.2%;
-    left: 73%;
-    font-size: 15px;
-    color: #A0A0A0;
-    font-family: arial;
-}
-
 .HA1 {
-    font-size: 30px;
-    font-family: arial;
-    margin-left: 116px;
-    color: #522d6d;
-    font-weight: bold;
+  position: absolute;
+  left: 60%;
+  top: 35px;
+  color: #0B3D91;
+  font-family: arial;
 }
+.PE1 {
+  position: absolute;
+  color: #444;
+  font-size: 1.05rem;
+  left: 60%;
+  top: 125px;
+  font-family: arial;
+}
+.info-list{
+position: relative;
+top: 69%;
+left: 5%;
+transform: translateY(-50%);
+display: flex;
+flex-direction: column;
+height: 200px;
+max-height: 400px;
+width: 90%;
+background-color: #f9f9f9;
+overflow-y: auto;
+box-sizing: border-box;
+padding-top: 300px;
+border-radius: 10px;
+}
+ul.info-list li {
+  background: #e0e7ff;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: inset 3px 3px 6px #c7cdf9,
+              inset -3px -3px 6px #f3f4ff;
+  color: #2a2a72;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: default;
+  font-family: arial;
+}
+ul.info-list li:hover {
+  background: #bec8ff;
+  box-shadow: 3px 3px 8px #a3afff;
+  color: #000051;
+}
+ul.info-list li strong {
+  color: #1b1b5a;
+}
+/**/
+
+.persegi-panjang2 {
+position: relative;
+left: 52%;
+top: -535px;
+width: 45.5%;
+height: 560px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/*FOOTER*/
+footer {
+  margin-top: 100px;
+  background-color: #0B3D91;
+  color: #fff;
+  padding: 30px;
+}
+
+footer .LF {
+  position: absolute;
+  left: 2.5%;
+  height: 70px;
+  font-family: arial;
+  font-size: 40px;
+}
+
+footer .H2F {
+  position: absolute;
+  top: 152%;
+  left: 70%;
+  font-family: arial;
+  font-size: 20px;
+    color:#fff;
+}
+footer .H22 {
+  position: absolute;
+  top: 152%;
+  left: 47%;
+  font-family: arial;
+  font-size: 20px;
+    color:#fff;
+}
+footer .H23 {
+  position: absolute;
+  top: 152%;
+  left: 25%;
+  font-family: arial;
+  font-size: 20px;
+  color:#ffffff;
+}
+
+footer .B1 {
+  position: absolute;
+  top: 157%;
+  left: 47%;
+  font-family: arial;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+footer .B2 {
+  position: absolute;
+  top: 162%;
+  left: 47%;
+  font-family: arial;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+footer .B3 {
+  position: absolute;
+  top: 167%;
+  left: 47%;
+  font-family: arial;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  position: absolute;
+  left: 70%;
+  top: 160%;
+  gap: 20px;
+}*/
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #522d6d;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 130px;
+  padding-top: 15px;
+  border-top: 1px solid #000000;
+  font-size: 14px;
+}
+/*DONE*/

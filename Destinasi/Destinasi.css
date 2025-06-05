@@ -2,9 +2,8 @@
     margin: 0;
     padding: 0;
 }
-
-.konten {
-      height: 3000px;
+body{
+    background-color: #e6f0fa;
 }
 
 .BG {
@@ -19,7 +18,7 @@ height: 95vh;
     width: 1264px;
     height: 75px;
     margin-bottom: 10px;
-    background-color: #522d6d;
+    background-color: #0B3D91;
 }
 
 .icon{
@@ -82,12 +81,13 @@ ul li a:hover{
 
 /*DESTINASI FAVORIT*/
 /*ISTANBUL*/
+
 .Istanbul {
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 250px;
-    height: 360px;
+    width: 220px;
+    height: 320px;
     margin-left: 9%;
     margin-top: 17px;
     display: grid;
@@ -97,8 +97,8 @@ ul li a:hover{
 }
 
 .IMI {
-    width: 250px;
-    height: 230px;
+    width: 220px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -123,7 +123,7 @@ ul li a:hover{
     position: absolute;          
     top: 76%;                    
     left: 9.5%;                   
-    padding: 13px 80px;          
+    padding: 13px 66px;          
     background-color: #007BFF;   
     color: white;                
     border: none;                
@@ -137,10 +137,10 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 250px;
-    height: 360px;
+    width: 220px;
+    height: 320px;
     margin-left: 30%;
-    margin-top: -360.5px;
+    margin-top: -320.5px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
@@ -148,8 +148,8 @@ ul li a:hover{
 }
 
 .IMJ {
-    width: 250px;
-    height: 230px;
+    width: 220px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -174,7 +174,7 @@ ul li a:hover{
     position: absolute;          
     top: 76%;                    
     left: 30.5%;                   
-    padding: 13px 80px;          
+    padding: 13px 66px;          
     background-color: #007BFF;   
     color: white;                
     border: none;                
@@ -188,10 +188,10 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 250px;
-    height: 360px;
+    width: 220px;
+    height: 320px;
     margin-left: 51%;
-    margin-top: -360.5px;
+    margin-top: -320.5px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
@@ -199,8 +199,8 @@ ul li a:hover{
 }
 
 .IMD {
-    width: 250px;
-    height: 230px;
+    width: 220px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -225,7 +225,7 @@ ul li a:hover{
     position: absolute;          
     top: 76%;                    
     left: 51.5%;                   
-    padding: 13px 80px;          
+    padding: 13px 66px;          
     background-color: #007BFF;   
     color: white;                
     border: none;                
@@ -239,19 +239,19 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 250px;
-    height: 360px;
+    width: 220px;
+    height: 320px;
     margin-left: 72%;
-    margin-top: -360.5px;
+    margin-top: -320.5px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.IMR {
-    width: 250px;
-    height: 230px;
+.IMRI {
+    width: 220px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -276,7 +276,7 @@ ul li a:hover{
     position: absolute;          
     top: 76%;                    
     left: 72.5%;                   
-    padding: 13px 80px;          
+    padding: 13px 66px;          
     background-color: #007BFF;   
     color: white;                
     border: none;                
@@ -290,7 +290,7 @@ ul li a:hover{
     font-size: 30px;
     font-family: arial;
     margin-left: 116px;
-    color: #522d6d;
+    color: black;
     font-weight: bold;
 }
 
@@ -298,9 +298,9 @@ ul li a:hover{
     position: relative;
     font-size: 26px;
     font-family: arial;
-    top: 2.5%;
-    margin-left: 116px;
-    color: #522d6d;
+    margin-top: 80px;
+    margin-left: 95px;
+    color: black;
     font-weight: bold;
 }
 
@@ -312,10 +312,14 @@ ul li a:hover{
       display: flex;
       scroll-behavior: smooth;
       width: 85%;
+      height: 380px;
       margin-left: 8%;
-      margin-top: 76.5px;
-      padding-bottom: 25px; 
+      margin-top: 0px;
+      padding-top: 30px;
+      padding-bottom: 30px; 
       box-sizing: content-box;
+      background-color: #fff;
+      border-radius: 12px;
     }
 
     .slide {
@@ -327,7 +331,7 @@ ul li a:hover{
     }
 
     .slide img {
-      width: 320px;
+      width: 300px;
       height: 230px;
       border-radius: 10px;
       object-fit: cover;
@@ -352,8 +356,8 @@ ul li a:hover{
 /*SLIDE1*/
 .Abha {
     position: relative;
-    top: 93%;
-    left: -600%;
+    top: 103%;
+    left: -560%;
     font-size: 22px;
     font-family: arial;
 }
@@ -361,7 +365,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -369,16 +373,17 @@ ul li a:hover{
 }
 .Abhap {
     position: relative;
-    top: 105%;
-    left: -410%;
+    top: 115%;
+    left: -385%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
     white-space: nowrap;
 }
 .BA {
-    position: relative;          
-    margin-top: 20%;
+    position: relative;    
+    height: 40px;      
+    margin-top: 30%;
     left: 4%;     
     width: 91.5%;
     top: -12%;
@@ -395,8 +400,8 @@ ul li a:hover{
 
 .xandria {
     position: relative;
-    top: 93%;
-    left: -295%;
+    top: 103%;
+    left: -275%;
     font-size: 22px;
     font-family: arial;
 }
@@ -404,7 +409,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -412,8 +417,8 @@ ul li a:hover{
 }
 .xandriap {
     position: relative;
-    top: 105%;
-    left: -404%;
+    top: 115%;
+    left: -382%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -421,7 +426,8 @@ ul li a:hover{
 }
 .BX {
     position: relative;          
-    margin-top: 20%;
+    margin-top: 30%;
+    height: 40px;      
     left: 4%;     
     width: 91.5%;
     top: -12%;
@@ -438,8 +444,8 @@ ul li a:hover{
 
 .amman {
     position: relative;
-    top: 93%;
-    left: -402%;
+    top: 103%;
+    left: -380%;
     font-size: 22px;
     font-family: arial;
 }
@@ -447,7 +453,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -455,8 +461,8 @@ ul li a:hover{
 }
 .ammanp {
     position: relative;
-    top: 105%;
-    left: -435%;
+    top: 115%;
+    left: -413%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -464,7 +470,8 @@ ul li a:hover{
 }
 .BAM {
     position: relative;          
-    margin-top: 20%;
+    margin-top: 30%;
+    height: 40px;      
     left: 4%;     
     width: 91.5%;
     top: -12%;
@@ -482,8 +489,8 @@ ul li a:hover{
 /*SLIDE2*/
 .dubai {
     position: relative;
-    top: 93%;
-    left: -530%;
+    top: 103%;
+    left: -498%;
     font-size: 22px;
     font-family: arial;
 }
@@ -491,7 +498,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -499,8 +506,8 @@ ul li a:hover{
 }
 .dubaip {
     position: relative;
-    top: 105%;
-    left: -412%;
+    top: 115%;
+    left: -390%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -508,7 +515,8 @@ ul li a:hover{
 }
 .BDD {
     position: relative;          
-    margin-top: 20%;
+    margin-top: 30%;
+    height: 40px;      
     left: 4%;     
     width: 91.5%;
     top: -12%;
@@ -526,7 +534,7 @@ ul li a:hover{
 .istanbul {
     position: relative;
     top: 102%;
-    left: -396%;
+    left: -370%;
     font-size: 22px;
     font-family: arial;
 }
@@ -534,7 +542,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -543,7 +551,7 @@ ul li a:hover{
 .istanbulp {
     position: relative;
     top: 115%;
-    left: -374%;
+    left: -353%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -570,7 +578,7 @@ ul li a:hover{
 .jeddah {
     position: relative;
     top: 102%;
-    left: -425%;
+    left: -400%;
     font-size: 22px;
     font-family: arial;
 }
@@ -578,7 +586,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -587,7 +595,7 @@ ul li a:hover{
 .jeddahp {
     position: relative;
     top: 115%;
-    left: -430%;
+    left: -410%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -615,7 +623,7 @@ ul li a:hover{
 .karachi {
     position: relative;
     top: 102%;
-    left: -407.5%;
+    left: -388%;
     font-size: 22px;
     font-family: arial;
 }
@@ -623,7 +631,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -632,7 +640,7 @@ ul li a:hover{
 .karachip {
     position: relative;
     top: 115%;
-    left: -370%;
+    left: -355%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -659,7 +667,7 @@ ul li a:hover{
 .madinah {
     position: relative;
     top: 102%;
-    left: -360%;
+    left: -340%;
     font-size: 22px;
     font-family: arial;
 }
@@ -667,7 +675,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -676,7 +684,7 @@ ul li a:hover{
 .madinahp {
     position: relative;
     top: 115%;
-    left: -440%;
+    left: -420%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -703,7 +711,7 @@ ul li a:hover{
 .riyadh {
     position: relative;
     top: 102%;
-    left: -445%;
+    left: -420%;
     font-size: 22px;
     font-family: arial;
 }
@@ -711,7 +719,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -720,7 +728,7 @@ ul li a:hover{
 .riyadhp {
     position: relative;
     top: 115%;
-    left: -425%;
+    left: -405%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -748,7 +756,7 @@ ul li a:hover{
 .salalah {
     position: relative;
     top: 102%;
-    left: -415%;
+    left: -395%;
     font-size: 22px;
     font-family: arial;
 }
@@ -756,7 +764,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -765,7 +773,7 @@ ul li a:hover{
 .salalahp {
     position: relative;
     top: 115%;
-    left: -370%;
+    left: -355%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -792,7 +800,7 @@ ul li a:hover{
 .sarajevo {
     position: relative;
     top: 102%;
-    left: -350%;
+    left: -335%;
     font-size: 22px;
     font-family: arial;
 }
@@ -800,7 +808,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -809,7 +817,7 @@ ul li a:hover{
 .sarajevop {
     position: relative;
     top: 115%;
-    left: -382%;
+    left: -370%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -836,7 +844,7 @@ ul li a:hover{
 .sohag {
     position: relative;
     top: 102%;
-    left: -480%;
+    left: -455%;
     font-size: 22px;
     font-family: arial;
 }
@@ -844,7 +852,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -853,7 +861,7 @@ ul li a:hover{
 .sohagp {
     position: relative;
     top: 115%;
-    left: -360%;
+    left: -343%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -881,7 +889,7 @@ ul li a:hover{
 .tabuk {
     position: relative;
     top: 102%;
-    left: -522.5%;
+    left: -495%;
     font-size: 22px;
     font-family: arial;
 }
@@ -889,7 +897,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -898,7 +906,7 @@ ul li a:hover{
 .tabukp {
     position: relative;
     top: 115%;
-    left: -410.5%;
+    left: -393%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -925,7 +933,7 @@ ul li a:hover{
 .taif {
     position: relative;
     top: 102%;
-    left: -899%;
+    left: -850%;
     font-size: 22px;
     font-family: arial;
 }
@@ -933,7 +941,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -942,7 +950,7 @@ ul li a:hover{
 .taifp {
     position: relative;
     top: 115%;
-    left: -330%;
+    left: -315%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -969,7 +977,7 @@ ul li a:hover{
 .arar {
     position: relative;
     top: 102%;
-    left: -612%;
+    left: -570%;
     font-size: 22px;
     font-family: arial;
 }
@@ -977,7 +985,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -986,7 +994,7 @@ ul li a:hover{
 .ararp {
     position: relative;
     top: 115%;
-    left: -348%;
+    left: -327%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -1014,7 +1022,7 @@ ul li a:hover{
 .paris {
     position: relative;
     top: 102%;
-    left: -610%;
+    left: -575%;
     font-size: 22px;
     font-family: arial;
 }
@@ -1022,7 +1030,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1031,7 +1039,7 @@ ul li a:hover{
 .parisp {
     position: relative;
     top: 115%;
-    left: -350%;
+    left: -330%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -1058,7 +1066,7 @@ ul li a:hover{
 .new {
     position: relative;
     top: 102%;
-    left: -330%;
+    left: -310%;
     font-size: 22px;
     font-family: arial;
     white-space: nowrap; 
@@ -1067,7 +1075,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1076,7 +1084,7 @@ ul li a:hover{
 .newp {
     position: relative;
     top: 115%;
-    left: -356.8%;
+    left: -340%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -1103,7 +1111,7 @@ ul li a:hover{
 .london {
     position: relative;
     top: 102%;
-    left: -415%;
+    left: -390%;
     font-size: 22px;
     font-family: arial;
 }
@@ -1111,7 +1119,7 @@ ul li a:hover{
     background: #fff;
     /*padding: 25px;*/
     border-radius: 12px;
-    width: 320px;
+    width: 300px;
     height: 363px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1120,7 +1128,7 @@ ul li a:hover{
 .londonp {
     position: relative;
     top: 115%;
-    left: -370%;
+    left: -352%;
     font-size: 17px;
     font-family: arial;
     color: #008193;
@@ -1149,14 +1157,247 @@ ul li a:hover{
   position: absolute;
   height: 35px;
   width: 212px;
-  left: 67%;
+  left: 75%;
   top: 3%;
 }
 .SRC {
   position: absolute;
   font-size: 33.5px;
-  left: 84.1%;
-  top:2.8%;
+  left: 92%;
+  top:2.7%;
   background-color: #e9e9e9;
+}
+/*DONE*/
+/*ARTIKEL*/
+.ARTIKEL {
+    font-size: 26px;
+    font-family: arial;
+    margin-top: 80px;
+    color: black;
+    font-weight: bold;
+    margin-left: 116px;
+}
+
+.art1 {
+    background: #fff;
+    /*padding: 25px;*/
+    width: 220px;
+    border-radius: 12px;
+    height: 320px;
+    margin-left: 9.3%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.JDL1 {
+    position: absolute;
+    top: 256%;
+    left: 10%;
+    font-size: 18px;
+    font-family: arial;
+}
+
+.HRG {
+    position: absolute;
+    top: 265%;
+    left: 10%;
+    font-size: 15px;
+    color: #A0A0A0;
+    font-family: arial;
+}
+
+.art2 {
+    background: #fff;
+    /*padding: 25px;*/
+    width: 220px;
+    height: 320px;
+    margin-left: 30.5%;
+    margin-top: -320px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+}
+.JDL2 {
+    position: absolute;
+    top: 256%;
+    left: 31%;
+    font-size: 18px;
+    font-family: arial;
+}
+
+.HRG2 {
+    position: absolute;
+    top: 265%;
+    left: 31%;
+    font-size: 15px;
+    color: #A0A0A0;
+    font-family: arial;
+}
+
+.art3 {
+    background: #fff;
+    /*padding: 25px;*/
+    width: 220px;
+    height: 320px;
+    margin-left: 51.5%;
+    margin-top: -320px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+}
+.JDL3 {
+    position: absolute;
+    top: 256%;
+    left: 52%;
+    font-size: 18px;
+    font-family: arial;
+}
+
+.HRG3 {
+    position: absolute;
+    top: 265%;
+    left: 52%;
+    font-size: 15px;
+    color: #A0A0A0;
+    font-family: arial;
+}
+
+.art4 {
+    background: #fff;
+    /*padding: 25px;*/
+    width: 220px;
+    height: 320px;
+    margin-left: 72.5%;
+    margin-top: -320px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+}
+.JDL4 {
+    position: absolute;
+    top: 256%;
+    left: 73%;
+    font-size: 18px;
+    font-family: arial;
+}
+
+.HRG4 {
+    position: absolute;
+    top: 265%;
+    left: 73%;
+    font-size: 15px;
+    color: #A0A0A0;
+    font-family: arial;
+}
+/*DONE*/
+/*FOOTER*/
+footer {
+  margin-top: 95px;
+  background-color: #0B3D91;
+  color: #fff;
+  padding: 30px;
+}
+
+footer .LF {
+    float: left;
+    height: 70px;
+    font-family: arial;
+    font-size: 40px;
+}
+.sky1 {
+  color: #fff;
+}
+
+.deal2 {
+  color: #FFFFFF;
+}
+footer .H2F {
+  position: absolute;
+  top: 303%;
+  left: 70%;
+  font-family: arial;
+  font-size: 20px;
+    color:#fff;
+}
+footer .H22 {
+  position: absolute;
+  top: 303%;
+  left: 47%;
+  font-family: arial;
+  font-size: 20px;
+    color:#fff;
+}
+footer .H23 {
+  position: absolute;
+  top: 303%;
+  left: 25%;
+  font-family: arial;
+  font-size: 20px;
+  color:#fff;
+}
+
+footer .B1 {
+  position: absolute;
+  top: 308%;
+  left: 47%;
+  font-family: arial;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+footer .B2 {
+  position: absolute;
+  top: 313%;
+  left: 47%;
+  font-family: arial;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+footer .B3 {
+  position: absolute;
+  top: 318%;
+  left: 47%;
+  font-family: arial;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  position: absolute;
+  left: 70%;
+  top: 310%;
+  gap: 20px;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #522d6d;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 130px;
+  padding-top: 15px;
+  border-top: 1px solid #000000;
+  font-size: 14px;
 }
 /*DONE*/

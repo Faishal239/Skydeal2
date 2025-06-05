@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e6f0fa;
+}
+
+.navbar{
+    width: 1264px;
+    height: 75px;
+    margin-bottom: 10px;
+    background-color: #0B3D91;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+    font-family: arial;
+    font-size: 40px;
+}
+
+.hello{
+    position: absolute;
+    height: auto;
+    left: 30px;
+    width: 150px;
+    padding: 5px;
+    margin-top: 6px;
+}
+.sky {
+  color: #87CEEB;
+}
+
+.deal {
+  color: #FFFFFF;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+    white-space: nowrap;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+/*TABEL*/
+.persegi-panjang {
+  position: relative;
+  margin: 60px auto; 
+  width: 95%;
+  min-height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.HAF {
+    font-family: Arial;
+    text-align: center;
+    color: #003366;
+    padding-top: 30px
+}
+
+.tabel-pss {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 10px;
+  overflow-x: auto;
+  padding-bottom: 50px;
+}
+
+table.tabel-riwayat {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+  table-layout: fixed;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #003366;
+}
+
+.kolom-no {
+  width: 30px;
+}
+
+.kolom-tiba {
+  width: 150px;
+}
+
+.tanggal-lahir {
+  width: 100px;
+}
+
+.NIK {
+  width: 150px;
+}
+
+.otw {
+  width: 175px;
+}
+
+.sampe {
+  width: 175px;
+}
+
+.name {
+  width: 150px;
+}
+
+.orang{
+  width: 75px;
+}
+
+.kelas {
+  width: 100px;
+}
+
+.kode {
+  width: 100px;
+}
+/*DONE*/
